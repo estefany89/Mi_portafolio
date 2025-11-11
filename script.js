@@ -124,24 +124,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Efecto de escritura en el título (opcional)
-const heroTitle = document.querySelector('.hero-title');
-if (heroTitle) {
-    const text = heroTitle.innerHTML;
-    heroTitle.innerHTML = '';
-    let index = 0;
-    
-    function typeWriter() {
-        if (index < text.length) {
-            heroTitle.innerHTML += text.charAt(index);
-            index++;
-            setTimeout(typeWriter, 50);
-        }
-    }
-    
-    // Iniciar efecto después de que cargue la página
-    setTimeout(typeWriter, 500);
-}
+// Animación de aparición del título ya está en CSS
+// El efecto de typewriter se ha eliminado para preservar el HTML correctamente
 
 // Contador de scroll para la flecha de scroll down
 const scrollDownArrow = document.querySelector('.scroll-down');
