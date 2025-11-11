@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #281a5a; /* Fondo de la página */
+            color: white;
+        }
+            /*Efectos caja */
+        .contact-box {
+            background: linear-gradient(90deg, #080a61, #4d2696);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 4px 8px #ffffff33;
+
+        }               
+        .btn-contact { /* boton contacto */
+            background: white;
+            color: #3e6085;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex; /*Que el contenedor sea flexible*/
+            align-items: center;
+            gap: 8px; /*espacio*/
+        }
+        .btn-contact:hover {
+            background: #ad84bd;
+        }
+        /*Seccion texto*/
+        .contact-section {
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 20px;
+        }
+         /*Seccion iconos*/
+        .contact-icons a {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #fff;
+            transition: 0.3s;
+        }
+        /*Efecto cambio color*/
+        .contact-icons a:hover {
+            color: #ad84bd;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Caja Azul con Mensaje de Contacto -->
+<div class="container my-5">
+    <div class="contact-box">
+        <h4 class="fw-bold">¡Hablemos!</h4>
+        <p>Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.</p>
+        <a href="mailto:correo@ejemplo.com" class="btn btn-contact">
+            <i class="bi bi-envelope-fill"></i> Contacto <!---->
+        </a>
+    </div>
+</div>
+
+<!-- Pie de Página -->
+<footer class="contact-section">
+    <p class="fw-bold">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+
+    <!-- Íconos de redes sociales -->
+    <div class="contact-icons my-3">
+        <a href="https://x.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://es.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://docs.github.com/" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+
+    <p class="small">Creado por <strong>Estefany Silva</strong> © 2025</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

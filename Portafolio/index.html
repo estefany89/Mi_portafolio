@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolio Personal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+
+        .nav-link:hover {
+            color: #271686; /* hover menu */
+                 }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .hero { /* Diseño pantalla */
+            background: url("imagenes/fondo1.1.png") no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            height: 100vh; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;/*se mueve diferentes posiciones*/
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1; /*z-index: 1 asegura que el contenido de .container se vea correctamente por encima del fondo.*/
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-black bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barraNavegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="barraNavegacion">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonio.html">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="articulos.html">Artículos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experiencia.html">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Sección Principal -->
+    <header class="hero">
+        <div class="container">
+            <img src="imagenes/mifoto.jpg" class="rounded-circle mb-3" alt="Foto de perfil" width="150">
+            <h1>Hola, soy Estefany Silva</h1>
+            <p>Desarrollador web apasionado por la tecnología y la innovación.</p>
+            <img src="imagenes/logos.svg"  alt="logos" width="650">
+        </div>
+    </header>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

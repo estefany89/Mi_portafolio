@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proyectos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+       
+       body {
+            color: #3f259e;
+       }
+
+        /*Título sección proyectos*/
+        .project-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+         /*Título sección proyectos 2*/
+        .project-title {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .project-icons a {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #3f259e;
+            transition: 0.3s;
+        }
+        .project-icons a:hover {
+            color:orchid;
+        }
+        
+        /*Imagenesde dentro .project-grid */
+
+        .project-grid img {
+            width: 100%; /*ancho del contenedor */
+            height: 200px; /* Altura */
+            object-fit: cover; /* Ajusta la imagen para cubrir el área sin deformarse */
+            border-radius: 15px; /* Solo esquinas redondeadas */
+            transition: transform 0.3s ease-in-out; /* Suaviza los cambios*/
+            display: block;/* Hace que la imagen sea un bloque */
+            margin: 0 auto;/* Centra la imagen horizontalmente */
+        }
+
+        .project-grid img:hover {
+            transform: scale(1.05);
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<!-- Sección de Proyectos -->
+<section class="project-section">
+    <h2 class="fw-bold">Mis proyectos recientes</h2>
+    <p>Estos son algunos proyectos que he creado recientemente...</p>
+
+    <!-- Proyecto Destacado -->
+    <div class="text-center my-4">
+        <h4 class="project-title">Proyecto 2</h4>
+        <div class="project-icons">
+            <a href="https://github.com/estefany89?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.figma.com/proto/fLZvoEGE4XVxSRnZDucRHP/Prototipo?node-id=1-2&starting-point-node-id=1%3A2&t=4MRzQFA6IKHZb12I-1" target="_blank"><i class="bi bi-display"></i></a>
+        </div>
+    </div>
+
+    <!-- Grid de Proyectos -->
+    <div class="container">
+        <div class="row g-3"> <!-- g-3 añade espacio uniforme entre imágenes -->
+            <div class="col-md-4 project-grid">
+                <img src="imagenes/foto4.jpg" alt="Proyecto 1" class="img-fluid">
+            </div>
+            <div class="col-md-4 project-grid">
+                <img src="imagenes/foto5.jpg" alt="Proyecto 2" class="img-fluid">
+            </div>
+            <div class="col-md-4 project-grid">
+                <img src="imagenes/foto6.jpg" alt="Proyecto 3" class="img-fluid">
+            </div>
+            <div class="col-md-4 project-grid">
+                <img src="imagenes/foto7.avif" alt="Proyecto 4" class="img-fluid">
+            </div>
+            <div class="col-md-4 project-grid">
+                <img src="imagenes/foto8.jpg" alt="Proyecto 5" class="img-fluid">
+            </div>
+            <div class="col-md-4 project-grid">
+                <img src="imagenes/foto9.webp" alt="Proyecto 6" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
